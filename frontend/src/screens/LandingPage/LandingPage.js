@@ -16,7 +16,7 @@ export const LandingPage = () => {
                           <Button size='lg' className='landingbutton'>Login</Button>
                       </a>
                       <a href='/register'>
-                          <Button size='lg' className='landingbutton' variant='outline-primary'>
+                          <Button size='lg' className='landingbutton2' variant='outline-primary'>
                               Signup
                           </Button>
                       </a>
