@@ -1,4 +1,4 @@
-import {Navbar , Form, Button, FormControl, Nav , NavDropdown , Container}  from 'react-bootstrap';
+import {Navbar , Form,  FormControl, Nav , NavDropdown , Container}  from 'react-bootstrap';
 
 
 
@@ -11,7 +11,7 @@ const Header = () => {
     <Navbar.Collapse id="basic-navbar-nav">
       
 
-          <Nav className="m-auto">>
+          <Nav className="m-auto">
           <Form inline>
         
         <FormControl
@@ -24,14 +24,13 @@ const Header = () => {
       </Form>
       </Nav>
       <Nav className="m-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">Link</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        <Nav.Link href="#home">My Notes</Nav.Link>
+        
+        <NavDropdown title="Arjun" id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">My Profile</NavDropdown.Item>
+          
           <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.4">Logout</NavDropdown.Item>
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>
