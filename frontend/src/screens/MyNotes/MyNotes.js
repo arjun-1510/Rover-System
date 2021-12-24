@@ -1,10 +1,12 @@
 import React from 'react';
+import {useEffect, useState} from 'react';
 import {  Badge, Button, Card } from 'react-bootstrap';
 import MainScreen from '../../components/MainScreen';
 import {Link}  from "react-router-dom"
 import { fontSize } from '@mui/system';
 import notes,{} from "../../data/notes";
-import Accordion from 'react-bootstrap/Accordion'
+import Accordion from 'react-bootstrap/Accordion';
+import axios from 'axios';
 
 
 
@@ -18,6 +20,14 @@ const MyNotes = () => {
         }
     }
 
+    const fetchNotes = async() => {
+      const {data} = await axios.get('/api/notes');
+      console.log(data);
+    }
+
+    useEffect(() => {
+         fetchNotes();
+    }, [])
 
     return (
         <div>
